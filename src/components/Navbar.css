@@ -1,0 +1,56 @@
+.navbar {
+    background-color: #071d2a; /* close to your screenshot color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links li:hover {
+    color: #48c9b0;
+  }
+  
+  .get-started-btn {
+    background-color: #1b5b9c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #1565c0;
+  }
+  
