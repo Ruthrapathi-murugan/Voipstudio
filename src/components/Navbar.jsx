@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logoImg from '../assets/logo.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <span className="logo-icon">🌀</span>
+        <img src={logoImg} alt="Voip Studio Logo" className="logo-image" />
         <span className="logo-text">Voip Studio</span>
       </div>
 

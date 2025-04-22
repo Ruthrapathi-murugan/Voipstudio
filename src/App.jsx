@@ -1,10 +1,11 @@
 
 import './App.css'
 import Hero from './components/Hero.jsx'
-import HowItWorks from './components/HowItWorks.jsx'
+
 
 import Navbar from './components/Navbar.jsx'
 import Pricing from './components/Pricing.jsx'
+import VoiceCallSystem from './components/VoiceCallSystem.jsx'
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
     <>
  <Navbar/>
  <Hero/>
- <HowItWorks/>
+ <VoiceCallSystem/>
  <Pricing/>
 
     </>

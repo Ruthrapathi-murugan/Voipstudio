@@ -1,6 +1,6 @@
 .pricing-section {
   padding: 60px 20px;
-  background: linear-gradient(to bottom, #022033, #04344a);
+  background: linear-gradient(to bottom,hwb(0 0% 100%), hwb(0 0% 100%));
   color: white;
   text-align: center;
   position: relative;

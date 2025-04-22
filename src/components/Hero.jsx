@@ -1,24 +1,26 @@
 import React from 'react';
 import './Hero.css';
-import robotImg from '../assets/robot.png'; // replace with your robot image path
+import aiImage from '../assets/ai-chip.png'; // Replace with your circuit AI image
+ // Replace with your background wave image
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-text">
         <h1>
-          <span className="highlight">AI</span> Powered <br /> Voice Revolution
+          <span className="gradient-text">AI</span> Powered <br /> 
+          <span className="gradient-text">Voice Revolution</span>
         </h1>
         <p>
-          Deliver smarter, faster, and more human-like voice interactions with the power of Large Language Models (LLMs). Our AI-driven solutions go beyond traditional voice systems by enabling natural.
+          Deliver smarter, faster, human-like voice interactions with AI-powered LLMs for natural, advanced conversations.
         </p>
         <div className="hero-buttons">
-          <button className="primary-btn">Try the Demo</button>
-          <button className="secondary-btn">View API Docs</button>
+          <button className="gradient-btn">Try the Demo</button>
+          <button className="gradient-btn-outline">View API Docs</button>
         </div>
       </div>
       <div className="hero-image">
-        <img src={robotImg} alt="AI Robot" />
+        <img src={aiImage} alt="AI Circuit" />
       </div>
     </div>
   );

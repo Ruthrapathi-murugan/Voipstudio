@@ -1,5 +1,6 @@
 .navbar {
-  background-color: #071d2a;
+  background-color: hwb(0 0% 100%);
+
   color: #fff;
   display: flex;
   align-items: center;
@@ -14,9 +15,11 @@
   align-items: center;
 }
 
-.logo-icon {
-  font-size: 24px;
+.logo-image {
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .logo-text {
@@ -42,7 +45,7 @@
 }
 
 .get-started-btn {
-  background-color: #1b5b9c;
+  background-color: #913291;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -56,14 +59,12 @@
   background-color: #1565c0;
 }
 
-/* Menu icon hidden on desktop */
 .menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
 }
 
-/* Responsive styles for mobile */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;

@@ -16,7 +16,7 @@ const Pricing = () => {
       <div className="pricing-cards">
         <div className="pricing-card">
           <h1>Starter</h1>
-          <h4>Free</h4>
+          <h1>Free</h1>
           <p>Limited API access</p>
         </div>
 
@@ -37,7 +37,7 @@ const Pricing = () => {
         </div>
       </div>
 
-      <img src={robotImg} alt="Robot" className="pricing-robot" />
+      
     </div>
   );
 };
