@@ -1,15 +1,18 @@
 .hero {
-  background-image: url('../assets/bg1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
+  background-image: url('../assets/bg.PNG');
+  background-size: cover;            /* Make sure it covers the whole hero */
+  background-position: center center;/* Always keep the image centered */
+  background-repeat: no-repeat;      /* Prevent image tiling */
+  width: 100%;
+  min-height: 100vh;                 /* Make hero take full viewport height */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
   flex-wrap: wrap;
+  color: #fff;
 }
+
 
 
 .hero-text {
@@ -72,10 +75,17 @@
   color: #050017;
 }
 
+.hero-image {
+  position: relative;
+}
+
 .hero-image img {
-  max-width: auto;
-  height: 100%;
+  width: 80%;
+  height: auto;
   border-radius: 20%;
+  position: relative;
+  top: -130px;        /* move image up by 20px */
+  left: -120px;        /* move image to the right by 20px */
 }
 
 /* Responsive */
