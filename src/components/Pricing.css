@@ -1,6 +1,7 @@
 .pricing-section {
   padding: 60px 20px;
-  background: linear-gradient(to bottom,hwb(0 0% 100%), hwb(0 0% 100%));
+  background-image: url('../assets/bg1.jpg');
+ 
   color: white;
   text-align: center;
   position: relative;

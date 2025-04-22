@@ -1,5 +1,5 @@
 .voice-call-system {
-  background: radial-gradient(circle at top left,hwb(0 0% 100%), #000 100%);
+  background-image: url('../assets/bg1.jpg');
   padding: 80px 20px;
   text-align: center;
   color: #fff;
