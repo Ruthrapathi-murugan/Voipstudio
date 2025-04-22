@@ -1,10 +1,12 @@
+/* Hero Section */
+
 .hero {
   background-image: url('../assets/bg.PNG');
-  background-size: cover;            /* Make sure it covers the whole hero */
-  background-position: center center;/* Always keep the image centered */
-  background-repeat: no-repeat;      /* Prevent image tiling */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;                 /* Make hero take full viewport height */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +15,7 @@
   color: #fff;
 }
 
-
+/* Text Content */
 
 .hero-text {
   max-width: 550px;
@@ -37,6 +39,8 @@
   margin-bottom: 30px;
   color: #d3d3d3;
 }
+
+/* Buttons */
 
 .hero-buttons {
   display: flex;
@@ -75,6 +79,8 @@
   color: #050017;
 }
 
+/* Image Section */
+
 .hero-image {
   position: relative;
 }
@@ -84,16 +90,40 @@
   height: auto;
   border-radius: 20%;
   position: relative;
-  top: -130px;        /* move image up by 20px */
-  left: -120px;        /* move image to the right by 20px */
+  top: -130px;
+  left: -120px;
 }
 
-/* Responsive */
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 40px 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-text p {
+    font-size: 17px;
+  }
+
+  .hero-image img {
+    top: -100px;
+    left: -80px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     padding: 40px 20px;
     text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
   }
 
   .hero-text h1 {
@@ -104,11 +134,39 @@
     font-size: 16px;
   }
 
+  .hero-buttons {
+    justify-content: center;
+  }
+
   .hero-image {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-image img {
-    max-width: 260px;
+    width: 260px;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .gradient-btn,
+  .gradient-btn-outline {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .hero-image img {
+    width: 220px;
   }
 }

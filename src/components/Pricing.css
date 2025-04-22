@@ -1,7 +1,8 @@
+/* Base Pricing Section Styles */
+
 .pricing-section {
   padding: 60px 20px;
   background-image: url('../assets/bg.PNG');
- 
   color: white;
   text-align: center;
   position: relative;
@@ -11,6 +12,8 @@
   font-size: 36px;
   margin-bottom: 20px;
 }
+
+/* Toggle Buttons */
 
 .toggle-buttons {
   margin: 20px 0;
@@ -28,7 +31,7 @@
   border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
-  transition: 0.3s;
+  transition: background-color 0.3s;
 }
 
 .toggle-buttons button:hover {
@@ -39,6 +42,8 @@
   background-color: #0a3d64;
   color: #fff;
 }
+
+/* Pricing Cards */
 
 .pricing-cards {
   display: flex;
@@ -62,7 +67,7 @@
   transform: translateY(-5px);
 }
 
-.pricing-card h1, 
+.pricing-card h1,
 .pricing-card h3 {
   font-size: 26px;
   margin-bottom: 10px;
@@ -79,6 +84,8 @@
   margin: 15px 0;
 }
 
+/* Pricing Robot Image */
+
 .pricing-robot {
   position: absolute;
   bottom: 20px;
@@ -87,8 +94,13 @@
   border-radius: 15px;
 }
 
-/* ✅ Responsive Styles */
+/* Tablet Responsive (max-width: 768px) */
+
 @media (max-width: 768px) {
+  .pricing-section {
+    padding: 50px 15px;
+  }
+
   .pricing-section h2 {
     font-size: 30px;
   }
@@ -99,7 +111,7 @@
   }
 
   .toggle-buttons button {
-    padding: 12px 25px;
+    padding: 12px 30px;
     font-size: 14px;
   }
 
@@ -113,7 +125,7 @@
     padding: 30px 20px;
   }
 
-  .pricing-card h1, 
+  .pricing-card h1,
   .pricing-card h3 {
     font-size: 22px;
   }
@@ -131,6 +143,8 @@
   }
 }
 
+/* Mobile Responsive (max-width: 480px) */
+
 @media (max-width: 480px) {
   .pricing-section h2 {
     font-size: 26px;
@@ -145,7 +159,7 @@
     padding: 25px 16px;
   }
 
-  .pricing-card h1, 
+  .pricing-card h1,
   .pricing-card h3 {
     font-size: 20px;
   }

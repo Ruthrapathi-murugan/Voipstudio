@@ -1,3 +1,5 @@
+/* Voice Call System Section */
+
 .voice-call-system {
   background-image: url('../assets/bg.PNG');
   padding: 80px 20px;
@@ -5,6 +7,8 @@
   color: #fff;
   font-family: 'Arial', sans-serif;
 }
+
+/* Text Section */
 
 .text-section h1 {
   font-size: 44px;
@@ -24,6 +28,8 @@
   margin-bottom: 30px;
 }
 
+/* Download Button */
+
 .download-btn {
   background: transparent;
   border: 2px solid #fff;
@@ -40,6 +46,8 @@
   color: #000;
   border-color: #20d3e6;
 }
+
+/* Card Section */
 
 .card-section {
   display: flex;
@@ -75,7 +83,8 @@
   color: #eee;
 }
 
-/* ✅ Responsive adjustments */
+/* ✅ Tablet Responsive (max-width: 768px) */
+
 @media (max-width: 768px) {
   .text-section h1 {
     font-size: 36px;
@@ -86,6 +95,8 @@
     padding: 25px;
   }
 }
+
+/* ✅ Mobile Responsive (max-width: 480px) */
 
 @media (max-width: 480px) {
   .text-section h1 {
