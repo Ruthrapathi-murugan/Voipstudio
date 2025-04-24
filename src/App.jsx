@@ -3,6 +3,7 @@ import './App.css'
 import Features from './components/Features.jsx'
 import Footer from './components/Footer.jsx'
 import Hero from './components/Hero.jsx'
+import Login from './components/Login.jsx'
 
 
 import Navbar from './components/Navbar.jsx'
@@ -19,6 +20,7 @@ function App() {
  <VoiceCallSystem/>
  <Pricing/>
  <Features/>
+ <Login/>
 
  
 
