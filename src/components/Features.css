@@ -1,0 +1,75 @@
+.features-section {
+    position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url('../assets/bg-wave.png'); /* Set the background image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 15px;
+  color: white;
+  }
+  
+  .features-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #cfd4da;
+    margin-bottom: 3rem;
+    font-weight: 600;
+  }
+  
+  .features-grid {
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    
+    background: rgb(8, 8, 8);
+    border-radius: 12px;
+    border-color: blueviolet;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-gradient-text{
+    padding: 20px;
+
+  }
+  .feature-benefits {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .feature-benefits li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #e6dddd;
+    line-height: 1.6;
+  }
+  
+  .feature-benefits li:before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+  
+  .use-cases {
+    margin-top: 1.5rem;
+  }
+  
+  .use-case-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: }

@@ -1,10 +1,12 @@
 import React from "react";
 import "./Pricing.css";
 import robotImg from "../assets/robot.png";
+import footerImg from '../assets/bg-wave.png'; // your image path here
 
 const Pricing = () => {
   return (
     <div className="pricing-section">
+      
       <h2>Pricing</h2>
 
       <div className="toggle-buttons">

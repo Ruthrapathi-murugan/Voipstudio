@@ -55,7 +55,8 @@ margin: 0px;
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s;
+  
+  transition:none
 }
 
 .get-started-btn:hover {

@@ -1,0 +1,129 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+ 
+}
+
+.footer-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00C6FF, #0072FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text {
+  font-size:xx-large;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  max-width: 90%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.text p {
+  font-size: 1.20rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: #d3d3d3;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.gradient-btn,
+.gradient-btn-outline {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Gradient-filled button */
+.gradient-btn {
+  background: linear-gradient(135deg, #9145B6, #00F0FF);
+  border: none;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.3);
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 240, 255, 0.4);
+}
+
+/* Gradient outline button */
+.gradient-btn-outline {
+  background: transparent;
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #9145B6, #00F0FF) 1;
+  color: #00F0FF;
+}
+
+.gradient-btn-outline:hover {
+  background: linear-gradient(135deg, #9145B6, #00F0FF);
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .text {
+    top: 45%;
+    font-size: large;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gradient-btn,
+  .gradient-btn-outline {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: medium;
+    top: 50%;
+    padding: 0 0.5rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+  }
+
+  .gradient-btn,
+  .gradient-btn-outline {
+    font-size: 0.9rem;
+  }
+}
