@@ -15,9 +15,13 @@
   
   /* Top Logo */
   .top-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding: 20px;
     z-index: 10;
     position: relative;
+    color: white;
   }
   
   .top-logo img {
@@ -54,7 +58,7 @@
     padding: 2rem;
     color: white;
   }
-  
+ 
   .hero-content {
     max-width: 600px;
     padding: 2rem;

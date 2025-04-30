@@ -14,6 +14,7 @@ const Login = () => {
       {/* Top Logo */}
       <div className="top-logo">
         <img src={logo} alt="VoIP Studio Logo" />
+        <h1>Voip studio</h1>
       </div>
 
       <div className="login-content">

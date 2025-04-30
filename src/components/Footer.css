@@ -1,53 +1,83 @@
 .footer {
   position: relative;
   width: 100%;
-  height: auto;
- 
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
 }
 
 .footer-image {
-  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
-}
-
-.gradient-text {
-  background: linear-gradient(90deg, #00C6FF, #0072FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .text {
-  font-size:xx-large;
   position: absolute;
-  top: 40%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -50%);
+  text-align: left;
+  z-index: 1;
   color: white;
-  max-width: 90%;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  max-width: 600px;
+}
+
+.main-heading {
+  margin: 0;
+}
+
+.ai-large {
+  font-size: 10rem;
+  background: linear-gradient(90deg, #00C6FF, #0072FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-weight: bold;
+}
+.voice{
+  
+  display: grid;
+}
+.powered {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #9145B6, #C56CF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.voice {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #FF5ACD, #FF8FA3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.revolution {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #00C6FF, #0072FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .text p {
-  font-size: 1.20rem;
+  font-size: 1.2rem;
   line-height: 1.6;
-  margin-top: 1rem;
   color: #d3d3d3;
-  text-align: center;
-  word-wrap: break-word;
-  word-break: break-word;
+  margin-top: 1.5rem;
 }
+
 .hero-buttons {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
-  z-index: 10;
 }
 
 .gradient-btn,
@@ -60,7 +90,6 @@
   transition: all 0.3s ease;
 }
 
-/* Gradient-filled button */
 .gradient-btn {
   background: linear-gradient(135deg, #9145B6, #00F0FF);
   border: none;
@@ -73,7 +102,6 @@
   box-shadow: 0 6px 20px rgba(0, 240, 255, 0.4);
 }
 
-/* Gradient outline button */
 .gradient-btn-outline {
   background: transparent;
   border: 2px solid;
@@ -87,12 +115,22 @@
   transform: translateY(-2px);
 }
 
-
-/* Responsive styles */
+/* Responsive design */
 @media (max-width: 768px) {
   .text {
-    top: 45%;
-    font-size: large;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .ai-large {
+    font-size: 4rem;
+  }
+
+  .powered,
+  .voice,
+  .revolution {
+    font-size: 2rem;
   }
 
   .text p {
@@ -101,29 +139,24 @@
 
   .hero-buttons {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
   }
 
   .gradient-btn,
   .gradient-btn-outline {
     width: 100%;
-    padding: 12px 20px;
+    max-width: 300px;
   }
 }
 
 @media (max-width: 480px) {
-  .text {
-    font-size: medium;
-    top: 50%;
-    padding: 0 0.5rem;
+  .ai-large {
+    font-size: 3rem;
   }
 
-  .text p {
-    font-size: 0.9rem;
-  }
-
-  .gradient-btn,
-  .gradient-btn-outline {
-    font-size: 0.9rem;
+  .powered,
+  .voice,
+  .revolution {
+    font-size: 1.5rem;
   }
 }

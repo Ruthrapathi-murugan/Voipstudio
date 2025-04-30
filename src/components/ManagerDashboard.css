@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('/background-gradient.png'); /* You must place your image in the public folder */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.manager-dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #111;
+  padding: 2rem 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  color: #aaa;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+.gradient-text {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.stat-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card.pink { color: #ff4dd2; }
+.stat-card.blue { color: #4dc3ff; }
+.stat-card.orange { color: #ff944d; }
+
+.stat-card h2 {
+  font-size: 2rem;
+  margin: 0.2rem 0 0;
+}
+
+.tables-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.table-card {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.table-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #333;
+  color: #ddd;
+  text-align: left;
+}
+
+.call-logs {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.export-btn {
+  background: #ae63e4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.report-dropdown {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.report-dropdown select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #fff;
+  border: none;
+}

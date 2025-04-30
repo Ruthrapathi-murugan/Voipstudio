@@ -1,0 +1,135 @@
+/* Layout */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #111;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  font-size: 1rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  background: #222;
+  padding: 0.75rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Content */
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Title with Gradient */
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff00cc, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cards */
+.top-cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card.blue {
+  background: #001f3f;
+}
+
+.card.teal {
+  background: #007b7f;
+}
+
+.card.green {
+  background: #004d00;
+}
+
+.card.purple {
+  background: #4b0082;
+}
+
+/* Middle Section */
+.middle-section {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-dark {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.toggle .on {
+  color: #00d8ff;
+  font-weight: bold;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card-light {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  color: #ddd;
+}
+
+.call-logs .log p {
+  margin: 0.5rem 0;
+}

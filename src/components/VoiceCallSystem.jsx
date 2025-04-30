@@ -1,12 +1,13 @@
 import React from 'react';
 import './VoiceCallSystem.css';
 import { FaCheckCircle, FaCog, FaBriefcase } from 'react-icons/fa';
-import voiceImg from '../assets/bg-wave.png';
+import voiceImg from '../assets/bg-wave.png'; // Make sure your image path is correct
 
 const VoiceCallSystem = () => {
   return (
     <div className="voice-call-system">
-      <img src={voiceImg} alt="Background" className="footer-image" />
+      <img src={voiceImg} alt="Background" className="voice-call-system-img" />
+
       <div className="text-section">
         <h1>
           <span className="gradient-text">LLM-Based</span><br /> Voice Call System
